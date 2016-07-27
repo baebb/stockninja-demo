@@ -1,0 +1,103 @@
+@mixin breakpoint($min: 0, $max: 0) {
+  $type: type-of($min);
+
+  @if $type == string {
+
+    //STANDARD BOOTSTRAP BREAKPOINTS
+    @if $min == xs {
+      @media (max-width: 767px) { @content; }       // Mobile Devices
+    }
+
+    @else if $min == sm {
+      @media (min-width: 768px) { @content; }       // Tablet Devices
+    }
+
+    @else if $min == md {
+      @media (min-width: 992px) { @content; }       // Desktops
+    }
+
+    @else if $min == lg {
+      @media (min-width: 1200px) { @content; }      // Widescreen Desktops
+    }
+
+    //TARGET SPECIFIC MOBILE DEVICES
+    @else if $min == iphone4 {
+        @media only screen
+            and (min-device-width : 320px)
+            and (max-device-width : 480px)
+            and (orientation : portrait)
+            and (-webkit-min-device-pixel-ratio : 2)
+        { @content; }
+    }
+
+    @else if $min == iphone5 {
+        @media only screen
+            and (min-device-width: 320px)
+            and (max-device-height: 568px)
+            and (orientation : portrait)
+            and (-webkit-device-pixel-ratio: 2)
+        { @content; }
+    }
+
+    @else if $min == iphone6 {
+        @media only screen
+            and (min-device-width: 375px)
+            and (max-device-height: 667px)
+            and (orientation : portrait)
+            and (-webkit-device-pixel-ratio: 2)
+        { @content; }
+    }
+
+    @else if $min == iphone6plus {
+        @media only screen
+            and (min-device-width : 414px)
+            and (max-device-width : 736px)
+            and (device-width : 414px)
+            and (device-height : 736px)
+            and (orientation : portrait)
+            and (-webkit-min-device-pixel-ratio : 3)
+            and (-webkit-device-pixel-ratio : 3)
+        { @content; }
+    }
+
+    @else if $min == galaxyS3 {
+        @media only screen
+            and (min-device-width: 320px)
+            and (max-device-height: 640px)
+            and (orientation : portrait)
+            and (-webkit-device-pixel-ratio: 2)
+        { @content; }
+    }
+
+    @else if $min == galaxyS4 {
+        @media only screen
+            and (min-device-width: 320px)
+            and (max-device-height: 640px)
+            and (orientation : portrait)
+            and (-webkit-device-pixel-ratio: 3)
+        { @content; }
+    }
+
+    @else if $min == galaxyS5 {
+        @media only screen
+            and (min-device-width: 360px)
+            and (max-device-height: 640px)
+            and (orientation : portrait)
+            and (-webkit-device-pixel-ratio: 3)
+        { @content; }
+    }
+    // Otherwise pass a warning to the compiler as to the appropriate options
+    @else {
+      @warn "The breakpoint mixin supports the following attributes: xs, sm, md, lg";
+    }
+  }
+
+    //TARGET EXACT MIN AND MAX VIEWPORT WIDTH
+  @else if $type == number {
+    $query: "all" !default;
+    @if      $min != 0 and $max != 0 { $query: "(min-width: #{$min}) and (max-width: #{$max})"; } // set both min and max
+    @else if $min != 0 and $max == 0 { $query: "(min-width: #{$min})"; } // set just min
+    @else if $min == 0 and $max != 0 { $query: "(max-width: #{$max})"; } // set just max
+    @media #{$query} { @content; }
+  }
+}

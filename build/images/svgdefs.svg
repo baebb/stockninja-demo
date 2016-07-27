@@ -1,0 +1,36 @@
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="snicon-stats-dots" viewBox="0 0 16 16">
+<title>stats-dots</title>
+<path class="path1" d="M2 14h14v2h-16v-16h2zM4.5 13c-0.828 0-1.5-0.672-1.5-1.5s0.672-1.5 1.5-1.5c0.044 0 0.088 0.002 0.131 0.006l1.612-2.687c-0.154-0.235-0.243-0.517-0.243-0.819 0-0.828 0.672-1.5 1.5-1.5s1.5 0.672 1.5 1.5c0 0.302-0.090 0.583-0.243 0.819l1.612 2.687c0.043-0.004 0.087-0.006 0.131-0.006 0.033 0 0.066 0.001 0.099 0.004l2.662-4.658c-0.165-0.241-0.261-0.532-0.261-0.845 0-0.828 0.672-1.5 1.5-1.5s1.5 0.672 1.5 1.5c0 0.828-0.672 1.5-1.5 1.5-0.033 0-0.066-0.001-0.099-0.004l-2.662 4.658c0.165 0.241 0.261 0.532 0.261 0.845 0 0.828-0.672 1.5-1.5 1.5s-1.5-0.672-1.5-1.5c0-0.302 0.090-0.583 0.243-0.819l-1.612-2.687c-0.043 0.004-0.087 0.006-0.131 0.006s-0.088-0.002-0.131-0.006l-1.612 2.687c0.154 0.235 0.243 0.517 0.243 0.819 0 0.828-0.672 1.5-1.5 1.5z"></path>
+</symbol>
+<symbol id="snicon-chart-bar" viewBox="0 0 16 16">
+<title>chart-bar</title>
+<path class="path1" d="M0 13h16v2h-16zM2 9h2v3h-2zM5 5h2v7h-2zM8 8h2v4h-2zM11 2h2v10h-2z"></path>
+</symbol>
+<symbol id="snicon-line-chart" viewBox="0 0 24 24">
+<title>line-chart</title>
+<path class="path1" d="M3.516 18.469l-1.5-1.5 7.5-7.5 3.984 4.031 7.078-7.969 1.406 1.406-8.484 9.563-3.984-4.031z"></path>
+</symbol>
+<symbol id="snicon-arrow-down" viewBox="0 0 24 24">
+<title>arrow-down</title>
+<path class="path1" d="M20.016 12l-8.016 8.016-8.016-8.016 1.453-1.406 5.578 5.578v-12.188h1.969v12.188l5.625-5.578z"></path>
+</symbol>
+<symbol id="snicon-arrow-up" viewBox="0 0 24 24">
+<title>arrow-up</title>
+<path class="path1" d="M3.984 12l8.016-8.016 8.016 8.016-1.453 1.406-5.578-5.578v12.188h-1.969v-12.188l-5.625 5.578z"></path>
+</symbol>
+<symbol id="snicon-arrow-up-right" viewBox="0 0 24 24">
+<title>arrow-up-right</title>
+<path class="path1" d="M9 5.016h9.984v9.984h-1.969v-6.609l-11.625 11.625-1.406-1.406 11.625-11.625h-6.609v-1.969z"></path>
+</symbol>
+<symbol id="snicon-close" viewBox="0 0 24 24">
+<title>close</title>
+<path class="path1" d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"></path>
+</symbol>
+<symbol id="snicon-file-text-o" viewBox="0 0 24 24">
+<title>file-text-o</title>
+<path class="path1" d="M12.984 9h5.531l-5.531-5.484v5.484zM6 2.016h8.016l6 6v12c0 1.078-0.938 1.969-2.016 1.969h-12c-1.078 0-2.016-0.891-2.016-1.969l0.047-16.031c0-1.078 0.891-1.969 1.969-1.969z"></path>
+</symbol>
+</defs>
+</svg>

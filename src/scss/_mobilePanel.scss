@@ -1,0 +1,106 @@
+@import "colors";
+
+.snModalOpen {
+    position: fixed;
+    overflow: hidden;
+}
+
+
+
+#sn-handle {
+    z-index: 9999992;
+    //    padding: 1vw;
+    display: none;
+    width: 10vw;
+    .sn-mini-button {
+        width: 16vw;
+        height: 16vw;
+        //        background-image: url("images/mascotRGB.svg");
+        background: $tipBackground no-repeat center;
+        @include border-radius(15vw);
+        @include box-shadow(rgba(0,0,0,.14) 0 2px 2px 0, rgba(0,0,0,.2) 0 3px 1px -2px, rgba(0,0,0,.12) 0 1px 5px 0);
+        right: 1.2rem;
+        bottom: 1.2rem;
+        position: relative;
+        .sn-icon {
+            color: white;
+            font-size: 2.6rem;
+            margin: 1.3rem;
+            right: -0.2rem;
+            position: relative;
+        }
+    }
+    .sn-slide-back {
+        width: 100%;
+        position: relative;
+        .sn-icon {
+            width: 100%;
+            color: white;
+            font-size: 2.6rem;
+            margin-top: 3vw;
+            position: relative;
+        }
+    }
+    &.sn-handle-open {
+        position: fixed;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        .sn-mini-button {
+            display: none;
+        }
+        .sn-slide-back {
+            display: block;
+        }
+    }
+    &.sn-handle-closed {
+        position: fixed;
+        bottom: 3vw;
+        .sn-mini-button {
+            position: absolute;
+            left: -10vw;
+            display: none;
+        }
+        .sn-slide-back {
+            display: none;
+        }
+    }
+}
+
+#sn-mobile-panel-wrapper {
+    z-index: 9999993;
+    overflow: hidden;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 0;
+    #sn-mobile-panel {
+        width: 90vw;
+        background: $tipBackground;
+        height: 100vh;
+        float: right;
+    }
+}
+
+
+
+
+
+
+
+
+#sn-mobile-faded-background {
+    z-index: 9999991;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}

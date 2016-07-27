@@ -1,0 +1,216 @@
+@import "colors";
+
+.sn-mobile-content {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+
+    //all layout/typography are em units relative to these mobile breakpoints
+    @include breakpoint(xs) {
+        font-size: 16px;
+    }
+    @include breakpoint(iphone6){
+        font-size: 17px;
+    }
+    @include breakpoint(iphone6plus){
+        font-size: 19px;
+    }
+
+
+    .sn-title {
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+        padding-top: 0.3em;
+        padding-bottom: 1em;
+        border-bottom: 2px solid $accentColor-1;
+
+        .sn-firstRow {
+            font-size: 1.7em;
+            font-weight: 600;
+            .sn-stockCode {
+                display: inline-block;
+            }
+            .sn-stockPrice {
+                float: right;
+                text-align: right;
+                display: inline-block;
+                height: 0;
+            }
+        }
+        .sn-secondRow {
+            margin-top: -0.2em;
+
+            .sn-stockName {
+                display: inline-block;
+                font-size: .7em;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: .03em;
+                width: 50%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .sn-stockChange {
+                &.sn-increase {
+                  color: $increaseColor;
+                }
+                &.sn-decrease {
+                  color: $decreaseColor;
+                }
+            }
+
+
+            .sn-stockChange {
+                display: inline-block;
+                float: right;
+                text-align: right;
+                font-size: 0.8em;
+                font-weight: 400;
+                .sn-value-up {
+                    display: inline-block;
+                    font-size: 0.9em;
+                }
+                .sn-value-down {
+                    display: inline-block;
+                    font-size: 0.9em;
+                }
+                .sn-absolute-change {
+                    display: inline-block;
+                    margin-top: -0.3em;
+                }
+                .sn-percentage-change {
+                    display: inline-block;
+                    margin-top: -0.3em;
+                }
+                .sn-percentage {
+                    position: relative;
+                    font-size: 0.8em;
+                    top: -0.1em;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .sn-content {
+        padding-left: 0.62em;
+        padding-right: 0.62em;
+        overflow-y: hidden;
+        margin-bottom: 3em;
+
+        .sn-graph {
+            .sn-graph-branding {
+                float: right;
+                font-size: .52em;
+                margin-top: 0.7em;
+                letter-spacing: 0.03em;
+                font-weight: 300;
+                img {
+                    display: inline;
+                    height: 1.2em;
+                    margin-top: -0.3em;
+                    margin-left: 0.1em;
+                }
+            }
+            .graph {
+                width: 100%;
+                padding-bottom: 0.3em;
+            }
+        }
+
+        .sn-data-panels {
+
+            .sn-leftBlock, .sn-rightBlock{
+                width: 49%;
+                display: inline-block;
+
+                .sn-sidebarBox {
+                    border-bottom: 1px solid $accentColor-2;
+                    text-transform: uppercase;
+                    font-size: 0.8em;
+                    color: $dataPointsGrey;
+                    padding-top: 0.25em;
+                    margin-left: 1px;
+                    margin-right: 1px;
+
+                    .sn-sidebarValue {
+                        float: right;
+                        font-family: 'Droid Sans', sans-serif;
+                        font-weight: 700;
+                        color: $dataPointsGrey-Light;
+                    }
+                }
+
+            }
+
+            .sn-leftBlock {
+                padding-right: 0.25em;
+            }
+            .sn-rightBlock {
+                padding-left: 0.25em;
+            }
+
+            .sn-color-block {
+                padding-left: 0.4em;
+                // padding-top: 0.1em;
+                padding-right: 0.3em;
+                padding-bottom: 0.1em;
+                margin-bottom: 0.5em;
+
+                .sn-color-block-label {
+                    font-size: 0.75em;
+                    font-weight: 300;
+                }
+                .sn-sideButtonValue {
+                    text-align: right;
+                    margin-top: -0.7em;
+                    font-size: 1.3em;
+                    font-family: 'Droid Sans', sans-serif;
+                    font-weight: 700;
+                    .sn-percentage {
+                        font-size: 0.5em;
+                        font-weight: 400;
+                        margin-left: -0.25em;
+                    }
+                }
+            }
+
+            .sn-heat {
+                background-color: $heat;
+            }
+
+            .sn-sentiment {
+                background-color: $sentiment;
+            }
+
+
+        }
+
+    }
+
+    .sn-footer {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        height: 3.5em;
+        padding-left: 0.62em;
+        padding-right: 0.62em;
+        padding-bottom: 0.62em;
+
+
+        .sn-index-guru-link {
+            background-color: $accentColor-1;
+            height: 100%;
+            text-align: center;
+            padding: 0.6em;
+            font-size: 1.12em;
+        }
+        .sn-insert-link {
+            @include breakpoint(xs){
+                display: none;
+            }
+        }
+    }
+
+}

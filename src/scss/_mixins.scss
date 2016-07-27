@@ -1,0 +1,21 @@
+//@extend-elements
+//original selectors
+
+//original selectors
+//.spotify-count-num:after, .spotify-count-num:before
+%followerCount {
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+    left: -5px;
+}
+
+//original selectors
+//#snPlayer .SN-player-prev, .SN-player-next
+%trackJump {
+	position: absolute;
+	top: 6px;
+	display: block;
+}

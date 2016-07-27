@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(https://www.google.com/fonts#UsePlace:use/Collection:Droid+Sans:400,700);
+
+.sn-desktop-tip {
+  width: 345px;
+  position: relative;
+  font-size: 12px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
+  width: auto;
+  color: #fff;
+
+  .sn-title {
+    background-color: #041322;
+    padding: 10px;
+
+    .sn-firstRow {
+      padding-bottom: 10px;
+      font-size: 24px;
+    }
+  }
+
+  .sn-stockCode {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  .sn-stockPrice {
+    float: right;
+    margin-left: 3px;
+  }
+
+  .sn-dollarSign {
+    position: relative;
+    top: -1px;
+    margin-right: -3px;
+    font-size: 0.9em;
+  }
+
+  .sn-dollarSignSmall {
+    position: relative;
+    top: -1px;
+    margin-right: -3px;
+    font-size: 0.9em;
+  }
+
+  .sn-stockName {
+    display: inline-block;
+    text-transform: uppercase;
+    width: 290px;
+    font-weight: 400;
+    position: relative;
+    top: -4px;
+  }
+
+  .sn-stockChange {
+    float: right;
+    margin-top: -5px;
+    font-size: 17px;
+    font-weight: 400;
+
+    &.sn-increase {
+      color: $increaseColor;
+    }
+    &.sn-decrease {
+      color: $decreaseColor;
+    }
+  }
+
+  .sn-content {
+    padding: 5px 10px;
+    height: 160px;
+
+    .sn-graph {
+      display: inline-block;
+    }
+
+    .sn-rightBlock {
+      float: right;
+      padding-top: 4px;
+      font-family: "Open Sans";
+      text-transform: uppercase;
+
+      .sn-color-block {
+        width: 126px;
+        height: 22px;
+        margin-bottom: 4px;
+        font-size: 11px;
+        padding-left: 5px;
+        line-height: 22px;
+
+        &.sn-sentiment {
+          background-color: #3277de;
+        }
+        &.sn-heat {
+          background-color: #714693;
+          margin-top: 4px;
+        }
+
+        .sn-sideButtonValue {
+          float:right;
+          margin-right: 5px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 22px;
+          .sn-percentage {
+            font-size: 11px;
+          }
+        }
+      }
+
+      .sn-sidebarBox {
+        width: 126px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 11px;
+        border-bottom: 1px solid #314459;
+        font-weight: 400;
+        color: #646d73;
+
+        .sn-sidebarValue {
+          float: right;
+          color: #878c8d;
+          font-weight: 700;
+          height:16px;
+        }
+      }
+    }
+  }
+
+  .sn-index-guru-link {
+    cursor:pointer;
+    margin: 5px 10px 10px 10px;
+    height: 38px;
+    line-height: 38px; // center text vertically
+    background-color: #1798be;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .sn-insert-link {
+    cursor:pointer;
+    margin: 5px 10px 10px 10px;
+    height: 38px;
+    line-height: 38px; // center text vertically
+    background-color: #444444;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+}

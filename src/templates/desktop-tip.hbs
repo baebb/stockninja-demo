@@ -1,0 +1,74 @@
+<div class="sn-desktop-tip">
+    <div class="sn-title">
+        <div class="sn-firstRow">
+            <div class="sn-stockCode">
+                {{company.Symbol}}
+            </div>
+            <div class="sn-stockPrice">
+                <span class="sn-dollarSign">$</span> <span class="sn-value-current"><img src="{{loadingGifUrl}}"/>
+            </div>
+        </div>
+        <div class="sn-secondRow">
+            <div class="sn-stockName">
+                {{company.Name}}
+            </div>
+            <div class="sn-stockChange">
+                <span class="sn-value-up sn-hidden"><svg class="sn-icon" viewBox="0 0 100 100"><use xlink:href="#snicon-arrow-up"/></svg></span>
+                <span class="sn-value-down sn-hidden"><svg class="sn-icon sn-rotate-180" viewBox="0 0 100 100"><use xlink:href="#snicon-arrow-up"/></svg></span>
+                <span class="sn-absolute-change"><img src="{{loadingGifUrl}}"/></span>
+                (<span class="sn-percentage-change"><img src="{{loadingGifUrl}}"/></span>%)
+            </div>
+        </div>
+    </div>
+
+    <div class="sn-content">
+        <div class="sn-graph">
+            <img class="graph" src="https://api.indx.guru/api/v1/external/company/{{company.Id}}/chart?width=300" alt="chart"/>
+        </div>
+        <div class="sn-rightBlock">
+            <div class="sn-color-block sn-sentiment">
+                SENTIMENT
+                <div class="sn-sideButtonValue"><span class="sn-value-sentiment"><img src="{{loadingGifUrl}}"/></span> <span class="sn-percentage">%</span></div>
+            </div>
+            <div class="sn-color-block sn-heat">
+                HEAT
+                <div class="sn-sideButtonValue"><span class="sn-value-heat"><img src="{{loadingGifUrl}}"/></span> <span class="sn-percentage">%</span></div>
+            </div>
+            <div class="sn-sidebarBox">
+                MKT CAP
+                <div class="sn-sidebarValue"><span class="sn-market-cap"><img src="{{loadingGifUrl}}"/></span></div>
+            </div>
+
+            <div class="sn-sidebarBox">
+                p/e ratio
+                <div class="sn-sidebarValue"><span class="sn-pe-ratio"><img src="{{loadingGifUrl}}"/></span></div>
+            </div>
+
+            <div class="sn-sidebarBox">
+                div yield
+                <div class="sn-sidebarValue"><span class="sn-dividend-yield"><img src="{{loadingGifUrl}}"/></span> %</div>
+            </div>
+
+            <div class="sn-sidebarBox">
+                Open
+                <div class="sn-sidebarValue">$ <span class="sn-value-open"><img src="{{loadingGifUrl}}"/></span></div>
+            </div>
+
+            <div class="sn-sidebarBox">
+                high
+                <div class="sn-sidebarValue">$ <span class="sn-value-high"><img src="{{loadingGifUrl}}"/></span></div>
+            </div>
+
+            <div class="sn-sidebarBox">
+                low
+                <div class="sn-sidebarValue">$ <span class="sn-value-low"><img src="{{loadingGifUrl}}"/></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="sn-index-guru-link">VIEW ON INDX.GURU</div>
+    <div class="sn-insert-link">
+        <svg class="sn-icon" viewBox="0 0 100 100"><use xlink:href="#snicon-file-text-o"/></svg>
+        Insert into text
+        <svg class="sn-icon" viewBox="0 0 100 100"><use xlink:href="#snicon-file-text-o"/></svg>
+    </div>
+</div>
