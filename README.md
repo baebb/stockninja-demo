@@ -1,4 +1,7 @@
 # stockninja-demo
+
+Check out live demo on: https://justrossthings.github.io/stockninja-demo/test/testpage.html
+
 To get started:
 
 1. Clone repo
